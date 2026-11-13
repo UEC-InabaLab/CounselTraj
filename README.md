@@ -43,6 +43,12 @@ See [the data card](data/README.md) for the schema and dataset details,
 [source notices](THIRD_PARTY_NOTICES.md) for attribution, and
 [licensing scope](LICENSING.md) for the code/data distinction.
 
+### Evaluation prompts
+
+The original [Table 6 evaluation prompts](evaluation/README.md) cover response-level
+counseling skills on PsyDial-D101 and dialogue-level counseling processes on
+PsychEval, corresponding to Appendix D.2 and Appendix D.4 of the paper.
+
 ### Limitations
 
 This dataset is not a substitute for professional diagnosis, treatment, or safety
