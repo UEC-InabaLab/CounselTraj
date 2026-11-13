@@ -1,6 +1,6 @@
 <a id="counseltraj"></a>
 
-# CounselTraj
+# CounselTraj: Synthesizing Process-Aware Psychological Counseling Dialogues via Dialogue-Act Trajectory Planning
 
 <a id="models"></a>
 
