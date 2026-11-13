@@ -14,8 +14,6 @@ to expand brief Chinese synthetic counseling dialogues.
 
 ![CounselTraj data construction framework](assets/fig_framework.png)
 
-[View the original vector PDF](assets/fig_framework.pdf).
-
 1. **Annotate dialogue acts.** Label the client and counselor utterances in
    selected KokoroChat sessions to obtain complete dialogue-act trajectories.
 2. **Construct brief dialogues.** Rewrite the Japanese sessions into brief Chinese
