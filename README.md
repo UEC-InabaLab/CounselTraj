@@ -1,6 +1,6 @@
 <a id="counseltraj"></a>
 
-# 🌱 CounselTraj
+# CounselTraj
 
 <a id="models"></a>
 
@@ -8,8 +8,8 @@
 
 | Model | Purpose | Base model | Format |
 | --- | --- | --- | --- |
-| 🧭 [CounselTraj-DA](https://huggingface.co/UEC-InabaLab/CounselTraj-DA) | Dialogue-act trajectory planning for dialogue synthesis | Qwen3-8B | LoRA adapter |
-| 💬 [CounselTrajLM](https://huggingface.co/UEC-InabaLab/CounselTrajLM) | Next counselor response generation from dialogue history | Qwen3.5-9B | LoRA adapter |
+| [CounselTraj-DA](https://huggingface.co/UEC-InabaLab/CounselTraj-DA) | Dialogue-act trajectory planning for dialogue synthesis | Qwen3-8B | LoRA adapter |
+| [CounselTrajLM](https://huggingface.co/UEC-InabaLab/CounselTrajLM) | Next counselor response generation from dialogue history | Qwen3.5-9B | LoRA adapter |
 
 🔒 Both model repositories are currently private and require access through an
 authorized Hugging Face account. Each repository includes its tokenizer, model
