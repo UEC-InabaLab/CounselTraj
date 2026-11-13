@@ -8,7 +8,7 @@
 
 | Model | Purpose | Base model | Format |
 | --- | --- | --- | --- |
-| [CounselTraj-DA](https://huggingface.co/UEC-InabaLab/CounselTraj-DA) | Dialogue-act trajectory planning for dialogue synthesis | Qwen3-8B | LoRA adapter |
+| [CounselTraj](https://huggingface.co/UEC-InabaLab/CounselTraj) | Dialogue-act trajectory planning for dialogue synthesis | Qwen3-8B | LoRA adapter |
 | [CounselTrajLM](https://huggingface.co/UEC-InabaLab/CounselTrajLM) | Next counselor response generation from dialogue history | Qwen3.5-9B | LoRA adapter |
 
 🔒 Both model repositories are currently private and require access through an
