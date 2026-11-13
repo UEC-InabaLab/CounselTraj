@@ -1,7 +1,7 @@
-# Table 6 evaluation prompts
+# Response-level and dialogue-level evaluation prompts
 
-These are the original Chinese implementation templates for the response-level
-and dialogue-level evaluations in Table 6 of the CounselTraj paper. Appendix D.2
+These Chinese templates cover the response-level and dialogue-level evaluations
+of counseling models in the CounselTraj paper. Appendix D.2
 (Figure 12) and Appendix D.4 (Figure 14) present their English descriptions.
 
 | Evaluation | Prompt | Dimensions | Score range |
@@ -11,7 +11,7 @@ and dialogue-level evaluations in Table 6 of the CounselTraj paper. Appendix D.2
 
 The evaluations use GPT-5.4 and gemini-3.5-flash. The response-level evaluation
 covers 1,278 examples; the dialogue-level evaluation covers 100 client profiles.
-Table 6 averages the two judges' scores. Its Ovl. column is the arithmetic mean
+Reported scores average the two judges' scores. The Ovl. score is the arithmetic mean
 of the corresponding skill or process dimensions, rather than the separate
 `overall` judgment requested by the response-level prompt.
 
@@ -22,12 +22,12 @@ IDs, `<<SCORE_SCHEMA>>` with a JSON score schema for those IDs, `<<HISTORY>>` wi
 the dialogue history, and `<<CANDIDATES>>` with the labeled candidate responses.
 The implementation shuffles the candidates and asks the judge to compare them
 before assigning scores. The original evaluation includes a human reference and
-two additional decoding variants alongside the ten models reported in Table 6.
+two additional decoding variants alongside the ten models compared in the paper.
 
 For the dialogue-level template, replace `<<CLIENT_PROFILE>>` with the client
 profile and `<<MODEL_DIALOGUES>>` with the complete dialogues. The implementation
 shuffles the dialogue order and uses `[Model: model_id]` headers. Some batches
 request scores without explanations, using the same six-dimensional rubric.
 
-These files preserve the experiment wording; they are not rewritten translations
-of the appendix figures.
+These templates retain the experiment's scoring criteria and omit unused output
+fields.

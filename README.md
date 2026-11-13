@@ -45,7 +45,7 @@ See [the data card](data/README.md) for the schema and dataset details,
 
 ### Evaluation prompts
 
-The original [Table 6 evaluation prompts](evaluation/README.md) cover response-level
+The [evaluation prompts](evaluation/README.md) cover response-level
 counseling skills on PsyDial-D101 and dialogue-level counseling processes on
 PsychEval, corresponding to Appendix D.2 and Appendix D.4 of the paper.
 

@@ -76,7 +76,6 @@
     "non_judgmental_acceptance": "候选编号或tie",
     "overall": "候选编号或tie"
   },
-  "overall_ranking": ["从最好到最差的候选编号"],
   "brief_reason": "用2-4句话概括主要差异，说明哪些候选更适合作为当前下一句咨询师回复。"
 }
 
