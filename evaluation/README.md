@@ -15,6 +15,31 @@ Reported scores average the two judges' scores. The Ovl. score is the arithmetic
 of the corresponding skill or process dimensions, rather than the separate
 `overall` judgment requested by the response-level prompt.
 
+## Research basis and references
+
+### Response-level evaluation
+
+The response-level evaluation follows the PsyDial evaluation setting of Qiu and
+Lan (2025), using PsyDial-D101 and its eight counseling-skill dimensions: Active
+Listening, Empathy, Issue Clarification, Open-ended Questioning, Encouraging
+Self-Exploration, Cognitive Restructuring, Guided Questioning, and Non-judgmental
+Acceptance.
+
+- Huachuan Qiu and Zhenzhong Lan (2025). [PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support](https://aclanthology.org/2025.acl-long.1049/). ACL 2025. Provides the professional-book counseling benchmark and response-level skill evaluation setting.
+
+### Dialogue-level evaluation
+
+The dialogue-level evaluation uses client profiles from PsychEval and draws on
+the counseling constructs below. The six-dimensional rubric adapts these
+foundations to evaluate complete simulated counseling sessions.
+
+| Prior work | Role in this evaluation |
+| --- | --- |
+| Qianjun Pan et al. (2026). [PsychEval: A Multi-Session and Multi-Therapy Benchmark for High-Realism AI Psychological Counselor](https://arxiv.org/abs/2601.01802). | Source of client profiles and a reference for interactive counseling evaluation. |
+| Adam O. Horvath and Leslie S. Greenberg (1989). [Development and Validation of the Working Alliance Inventory](https://doi.org/10.1037/0022-0167.36.2.223). Journal of Counseling Psychology. | Conceptual basis for Therapeutic Alliance (TA), including collaboration, trust, and the counseling relationship. |
+| Carl R. Rogers (1957). [The Necessary and Sufficient Conditions of Therapeutic Personality Change](https://doi.org/10.1037/h0045357). Journal of Consulting Psychology. | Conceptual basis for empathic understanding, acceptance, and the therapeutic relationship. |
+| Clara E. Hill (2009). [Helping Skills: Facilitating Exploration, Insight, and Action, third edition](https://www.apa.org/pubs/books/interviews/4311012-hill). APA book; link to the publisher's author discussion. | Conceptual basis for exploration, appropriate interventions, and progression through the helping process. |
+
 ## Inputs and scoring
 
 For the response-level template, replace `<<LABEL_LIST>>` with anonymous candidate

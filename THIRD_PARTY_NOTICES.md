@@ -9,7 +9,7 @@ provenance; raw source conversations are not included in this release.
 - Creators: Huachuan Qiu, Hongliang He, Shuai Zhang, Anqi Li, and Zhenzhong Lan.
 - Source: https://github.com/qiuhuachuan/smile
 - Source license: https://github.com/qiuhuachuan/smile/blob/main/LICENSE (CC0-1.0).
-- Paper: https://aclanthology.org/2024.findings-emnlp.34/
+- Paper: Qiu et al. (2024), [SMILE: Single-turn to Multi-turn Inclusive Language Expansion via ChatGPT for Mental Health Support](https://aclanthology.org/2024.findings-emnlp.34/). Findings of EMNLP 2024.
 - Changes: source conversations conditioned dialogue-act trajectory generation
   and long-dialogue expansion; generated utterances and trajectories were
   extracted into the public JSONL schema. These are not original SmileChat rows.
@@ -24,7 +24,7 @@ provenance; raw source conversations are not included in this release.
 - Direct dataset license metadata:
   https://modelscope.cn/api/v1/datasets/YIRONGCHEN/PsyDTCorpus (Apache License 2.0).
 - Official project and license: https://github.com/scutcyr/SoulChat2.0
-- Paper: https://aclanthology.org/2025.acl-long.55/
+- Paper: Xie et al. (2025), [PsyDT: Using LLMs to Construct the Digital Twin of Psychological Counselor with Personalized Counseling Style for Psychological Counseling](https://aclanthology.org/2025.acl-long.55/). ACL 2025.
 - Changes: source conversations conditioned dialogue-act trajectory generation
   and long-dialogue expansion; generated utterances and trajectories were
   extracted into the public JSONL schema. These are not original PsyDTCorpus rows.
@@ -39,7 +39,7 @@ provenance; raw source conversations are not included in this release.
 - Dataset card: https://huggingface.co/datasets/CAS-SIAT-XinHai/CPsyCoun/blob/main/README.md
   (CC-BY-SA-4.0).
 - Project: https://github.com/CAS-SIAT-XinHai/CPsyCoun
-- Paper: https://aclanthology.org/2024.findings-acl.830/
+- Paper: Zhang et al. (2024), [CPsyCoun: A Report-based Multi-turn Dialogue Reconstruction and Evaluation Framework for Chinese Psychological Counseling](https://aclanthology.org/2024.findings-acl.830/). Findings of ACL 2024.
 - Changes: source conversations conditioned dialogue-act trajectory generation
   and long-dialogue expansion; generated utterances and trajectories were
   extracted into the public JSONL schema. These are not original CPsyCounD rows.

@@ -8,12 +8,12 @@ The complete release contains **958,791 utterances** across 15 topic categories.
 These are generated expansions conditioned on source conversations, not newly
 collected human counseling sessions.
 
-| Source of seed conversations | Dialogues | Data terms |
-| --- | ---: | --- |
-| SmileChat | 7,672 | CC0-1.0; see source notices |
-| PsyDTCorpus | 2,595 | Apache-2.0; retain applicable notices |
-| CPsyCounD | 697 | CC-BY-SA-4.0; see source notices |
-| **Total** | **10,964** | **Source-specific terms, not a single blanket license** |
+| Source of seed conversations | Dialogues | Data terms | Paper |
+| --- | ---: | --- | --- |
+| SmileChat | 7,672 | CC0-1.0; see source notices | [SMILE (Qiu et al., 2024)](https://aclanthology.org/2024.findings-emnlp.34/) |
+| PsyDTCorpus | 2,595 | Apache-2.0; retain applicable notices | [PsyDT (Xie et al., 2025)](https://aclanthology.org/2025.acl-long.55/) |
+| CPsyCounD | 697 | CC-BY-SA-4.0; see source notices | [CPsyCoun (Zhang et al., 2024)](https://aclanthology.org/2024.findings-acl.830/) |
+| **Total** | **10,964** | **Source-specific terms, not a single blanket license** | |
 
 The three losslessly compressed JSONL files together form one dataset. They are
 separated by provenance to make attribution and licensing explicit. Raw seed
@@ -48,6 +48,8 @@ See [the data card](data/README.md) for the schema and dataset details,
 The [evaluation prompts](evaluation/README.md) cover response-level
 counseling skills on PsyDial-D101 and dialogue-level counseling processes on
 PsychEval, corresponding to Appendix D.2 and Appendix D.4 of the paper.
+The [research basis and references](evaluation/README.md#research-basis-and-references)
+explain the prior work behind the evaluation data and criteria, with publication links.
 
 ### Limitations
 
