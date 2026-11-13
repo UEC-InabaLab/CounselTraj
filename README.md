@@ -2,6 +2,32 @@
 
 # CounselTraj: Synthesizing Process-Aware Psychological Counseling Dialogues via Dialogue-Act Trajectory Planning
 
+<a id="data-construction"></a>
+
+## 🧩 Data construction
+
+CounselTraj learns session-level interaction patterns from
+[KokoroChat](https://github.com/UEC-InabaLab/KokoroChat), a Japanese counseling
+dialogue dataset collected through role-playing by trained counselors
+([Qi et al., ACL 2025](https://aclanthology.org/2025.acl-long.608/)), and uses them
+to expand brief Chinese synthetic counseling dialogues.
+
+![CounselTraj data construction framework](assets/fig_framework.png)
+
+[View the original vector PDF](assets/fig_framework.pdf).
+
+1. **Annotate dialogue acts.** Label the client and counselor utterances in
+   selected KokoroChat sessions to obtain complete dialogue-act trajectories.
+2. **Construct brief dialogues.** Rewrite the Japanese sessions into brief Chinese
+   dialogues, pairing each brief dialogue with its original annotated trajectory.
+3. **Train the trajectory planner.** Fine-tune Qwen3-8B on these pairs to predict
+   session-level dialogue-act trajectories from brief dialogues.
+4. **Plan trajectories for new inputs.** Apply the planner to brief dialogues from
+   SmileChat, CPsyCounD, and PsyDTCorpus, conditioning each trajectory on its input.
+5. **Expand into session-level dialogues.** Use the brief dialogue and planned
+   trajectory to guide long-form generation. For CounselTrajD, GPT-5.5 produces
+   the resulting collection of 10,964 Chinese counseling dialogues.
+
 <a id="models"></a>
 
 ## 🤗 Models
