@@ -44,7 +44,7 @@ class ExportTests(unittest.TestCase):
         meta = {'source_dataset': 'SmileChat', 'source_id': '42', 'topic': 'other',
                 'topic_zh': 'other', 'tag_path': 'client:[Greeting]',
                 'short_dialogue': 'PRIVATE SEED', 'source_file': '/home/private'}
-        row = m.public_row(raw, meta, {'overall_score': 75, 'recommendation': 'review'})
+        row = m.public_row(raw, meta)
         self.assertEqual(set(row), module('load_counseltraj').FIELDS)
         text = json.dumps(row)
         self.assertNotIn('PRIVATE SEED', text)
@@ -58,7 +58,7 @@ class ExportTests(unittest.TestCase):
             row = {'id': 'example', 'source_dataset': 'SmileChat', 'source_id': '42',
                    'topic': 'other', 'topic_zh': 'other', 'license': 'CC0-1.0',
                    'messages': [{'role': 'user', 'content': 'Hello.', 'dialogue_act': 'Greeting'}],
-                   'planned_dialogue_acts': [], 'quality_score': 75, 'quality_recommendation': 'review'}
+                   'planned_dialogue_acts': []}
             p = d / 'example.jsonl.gz'
             with gzip.open(p, 'wt', encoding='utf-8') as f:
                 f.write(json.dumps(row) + '\n')

@@ -96,7 +96,7 @@ def parse_trajectory(text):
     return [{'role': ROLES[m.group(1)], 'dialogue_act': m.group(2)} for m in matches]
 
 
-def public_row(raw, meta, score):
+def public_row(raw, meta):
     source = meta['source_dataset']
     if source not in SOURCES:
         raise ValueError('Unexpected source: ' + source)
@@ -109,8 +109,6 @@ def public_row(raw, meta, score):
         'license': SOURCES[source][1],
         'messages': parse_messages(extract_text(raw)),
         'planned_dialogue_acts': parse_trajectory(meta['tag_path']),
-        'quality_score': score['overall_score'],
-        'quality_recommendation': score['recommendation'],
     }
 
 
@@ -121,14 +119,10 @@ def build(source_dir, release_dir, private_audit):
         if (data_dir / name).exists():
             raise FileExistsError('Refusing to overwrite an existing release')
     metadata = index_rows(source_dir / 'metadata.jsonl', 'custom_id')
-    scores = index_rows(source_dir / 'quality_scores.jsonl', 'source_custom_id')
-    if set(metadata) != set(scores):
-        raise ValueError('Metadata and score IDs do not match')
     seen = set()
     source_counts = Counter()
     topic_counts = Counter()
     model_counts = Counter()
-    recommendation_counts = Counter()
     role_counts = Counter()
     sensitive = {name: [] for name in SENSITIVE}
     utterances = characters = mismatched_plan_lengths = 0
@@ -142,12 +136,11 @@ def build(source_dir, release_dir, private_audit):
             ident = raw['custom_id']
             if ident in seen:
                 raise ValueError('Duplicate dialogue: ' + ident)
-            row = public_row(raw, metadata[ident], scores[ident])
+            row = public_row(raw, metadata[ident])
             seen.add(ident)
             source = row['source_dataset']
             source_counts[source] += 1
             topic_counts[row['topic_zh']] += 1
-            recommendation_counts[row['quality_recommendation']] += 1
             model_counts[raw['response']['body'].get('model', 'unspecified')] += 1
             utterances += len(row['messages'])
             role_counts.update(m['role'] for m in row['messages'])
@@ -178,7 +171,6 @@ def build(source_dir, release_dir, private_audit):
         'text_characters': characters, 'source_counts': dict(source_counts),
         'topic_counts': dict(topic_counts), 'role_counts': dict(role_counts),
         'generation_model_counts': dict(model_counts),
-        'automated_quality_recommendations': dict(recommendation_counts),
         'dialogues_with_plan_length_mismatch': mismatched_plan_lengths,
         'sensitive_pattern_flag_counts': {k: len(v) for k, v in sensitive.items()},
         'raw_seed_dialogues_included': False, 'provider_envelopes_included': False,
@@ -190,7 +182,7 @@ def build(source_dir, release_dir, private_audit):
         'source_dir': str(source_dir), 'release_dir': str(release_dir),
         'sensitive_pattern_ids': sensitive,
         'source_file_sha256': {n: sha256(source_dir / n) for n in
-                               ['dialogues.jsonl', 'metadata.jsonl', 'quality_scores.jsonl']},
+                               ['dialogues.jsonl', 'metadata.jsonl']},
         'report': report,
     }, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, ensure_ascii=False, indent=2))

@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 FIELDS = {'id', 'source_dataset', 'source_id', 'topic', 'topic_zh', 'license',
-          'messages', 'planned_dialogue_acts', 'quality_score', 'quality_recommendation'}
+          'messages', 'planned_dialogue_acts'}
 
 
 def load_dialogues(data_dir, source=None):

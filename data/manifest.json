@@ -34,10 +34,6 @@
   "generation_model_counts": {
     "gpt-5.5-2026-04-23": 10964
   },
-  "automated_quality_recommendations": {
-    "keep": 1045,
-    "review": 9919
-  },
   "dialogues_with_plan_length_mismatch": 114,
   "sensitive_pattern_flag_counts": {
     "email_like": 0,
@@ -53,22 +49,22 @@
       "source_dataset": "SmileChat",
       "license": "CC0-1.0",
       "dialogues": 7672,
-      "bytes": 38435095,
-      "sha256": "e10faf4ed888530d2744f682ef1fc5b68fe0ba11b374273fc3cd336d55571bbd"
+      "bytes": 38371458,
+      "sha256": "1231505b661ba69e251748e8198034d70f2f0d714a61793ff10e58cb5c01967f"
     },
     "psydt_derived.jsonl.gz": {
       "source_dataset": "PsyDTCorpus",
       "license": "Apache-2.0",
       "dialogues": 2595,
-      "bytes": 13404458,
-      "sha256": "3e5bc56bbe0be2e601cdb4efb264cfa75ad5a5027e557180e4bccb32eefccd66"
+      "bytes": 13382424,
+      "sha256": "a2d9ea61e4bd6a355c5ca15daf87752eeb80656256d1dd16f1024ab0fe202e1e"
     },
     "cpsycound_derived.jsonl.gz": {
       "source_dataset": "CPsyCounD",
       "license": "CC-BY-SA-4.0",
       "dialogues": 697,
-      "bytes": 3528249,
-      "sha256": "863a12037964bb8c72e7c8531c384c1d73d77c45452ae729d7aa3ea5c0e8305b"
+      "bytes": 3522829,
+      "sha256": "bfaa0556f8d637606efcd7e994da9dc91620a10011887848e6469dcffb712a13"
     }
   }
 }

@@ -39,17 +39,16 @@ for dialogue in load_dialogues("data"):
     messages = dialogue["messages"]
 ```
 
-See [the data card](data/README.md) for the schema and selection details,
+See [the data card](data/README.md) for the schema and dataset details,
 [source notices](THIRD_PARTY_NOTICES.md) for attribution, and
 [licensing scope](LICENSING.md) for the code/data distinction.
 
 ### Limitations
 
-The quality scores and `keep`/`review` recommendations are automated evaluations,
-not clinical certification or manual approval. This dataset is not a substitute
-for professional diagnosis, treatment, or safety evaluation. Synthetic generation
-and omission of seed fields do not establish that every utterance is anonymous;
-automated pattern screening is only a limited check.
+This dataset is not a substitute for professional diagnosis, treatment, or safety
+evaluation. Synthetic generation and omission of seed fields do not establish
+that every utterance is anonymous; automated pattern screening is only a limited
+check.
 
 No model weights, benchmark test answers, or private training infrastructure are
 included in this data release.
