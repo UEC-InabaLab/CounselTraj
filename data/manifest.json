@@ -1,0 +1,74 @@
+{
+  "dataset": "CounselTrajD",
+  "version": "10964-20261113",
+  "dialogues": 10964,
+  "unique_ids": 10964,
+  "utterances": 958791,
+  "text_characters": 42197155,
+  "source_counts": {
+    "CPsyCounD": 697,
+    "PsyDTCorpus": 2595,
+    "SmileChat": 7672
+  },
+  "topic_counts": {
+    "学业校园": 838,
+    "行为习惯": 711,
+    "抑郁低落": 930,
+    "情绪焦虑": 970,
+    "成长规划": 1010,
+    "健康睡眠躯体": 623,
+    "人际社交": 1010,
+    "其他": 219,
+    "自我认同": 1009,
+    "性心理": 97,
+    "社会适应": 97,
+    "治疗与心理知识": 399,
+    "职场职业": 1010,
+    "家庭亲子": 1004,
+    "婚恋关系": 1037
+  },
+  "role_counts": {
+    "assistant": 484881,
+    "user": 473910
+  },
+  "generation_model_counts": {
+    "gpt-5.5-2026-04-23": 10964
+  },
+  "automated_quality_recommendations": {
+    "keep": 1045,
+    "review": 9919
+  },
+  "dialogues_with_plan_length_mismatch": 114,
+  "sensitive_pattern_flag_counts": {
+    "email_like": 0,
+    "cn_mobile_like": 0,
+    "cn_id_like": 0,
+    "credential_like": 0,
+    "internal_path_like": 0
+  },
+  "raw_seed_dialogues_included": false,
+  "provider_envelopes_included": false,
+  "files": {
+    "smilechat_derived.jsonl.gz": {
+      "source_dataset": "SmileChat",
+      "license": "CC0-1.0",
+      "dialogues": 7672,
+      "bytes": 38435095,
+      "sha256": "e10faf4ed888530d2744f682ef1fc5b68fe0ba11b374273fc3cd336d55571bbd"
+    },
+    "psydt_derived.jsonl.gz": {
+      "source_dataset": "PsyDTCorpus",
+      "license": "Apache-2.0",
+      "dialogues": 2595,
+      "bytes": 13404458,
+      "sha256": "3e5bc56bbe0be2e601cdb4efb264cfa75ad5a5027e557180e4bccb32eefccd66"
+    },
+    "cpsycound_derived.jsonl.gz": {
+      "source_dataset": "CPsyCounD",
+      "license": "CC-BY-SA-4.0",
+      "dialogues": 697,
+      "bytes": 3528249,
+      "sha256": "863a12037964bb8c72e7c8531c384c1d73d77c45452ae729d7aa3ea5c0e8305b"
+    }
+  }
+}
