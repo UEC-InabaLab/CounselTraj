@@ -52,3 +52,16 @@ check.
 
 No model weights, benchmark test answers, or private training infrastructure are
 included in this data release.
+
+### Citation
+
+If you use CounselTraj in your research, please cite:
+
+```bibtex
+@inproceedings{qi-inaba-2027-counseltraj,
+    title = "{CounselTraj}: Synthesizing Process-Aware Psychological Counseling Dialogues via Dialogue-Act Trajectory Planning",
+    author = "Qi, Zhiyang and Inaba, Michimasa",
+    booktitle = "Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics",
+    year = "2027",
+}
+```
