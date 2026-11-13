@@ -61,6 +61,47 @@ separated by provenance to make attribution and licensing explicit. Raw seed
 conversation text, provider API envelopes, billing information, and internal file
 paths are not included.
 
+<a id="dataset-statistics"></a>
+
+### 📊 Dataset statistics
+
+| Statistic | Overall | Client | Counselor |
+| --- | ---: | ---: | ---: |
+| Dialogues | 10,964 | — | — |
+| Utterances | 958,791 | 473,910 | 484,881 |
+| Mean utterances / dialogue | 87.45 | 43.22 | 44.22 |
+| Characters | 42,197,155 | 18,321,830 | 23,875,325 |
+| Mean characters / dialogue | 3,848.70 | 1,671.09 | 2,177.61 |
+| Mean characters / utterance | 44.04 | 38.68 | 49.29 |
+| Topics | 15 | — | — |
+
+Utterances are individual messages. Character counts exclude speaker labels and
+dialogue-act tags. Mean characters per utterance is averaged across dialogues.
+Counts were verified against the released data and [manifest](data/manifest.json).
+
+<details>
+<summary>Topic distribution (15 topics)</summary>
+
+| Topic | Dialogues | Share |
+| --- | ---: | ---: |
+| Romantic relationships | 1,037 | 9.46% |
+| Growth / planning | 1,010 | 9.21% |
+| Interpersonal relationships | 1,010 | 9.21% |
+| Work / career | 1,010 | 9.21% |
+| Self-identity | 1,009 | 9.20% |
+| Family / parenting | 1,004 | 9.16% |
+| Emotion / anxiety | 970 | 8.85% |
+| Depression / low mood | 930 | 8.48% |
+| Academic / school | 838 | 7.64% |
+| Behavior / habits | 711 | 6.48% |
+| Health / sleep / somatic concerns | 623 | 5.68% |
+| Therapy / psychology knowledge | 399 | 3.64% |
+| Other | 219 | 2.00% |
+| Sexuality | 97 | 0.88% |
+| Social adaptation | 97 | 0.88% |
+
+</details>
+
 <a id="download-and-verify"></a>
 
 ### 📦 Download and verify
@@ -104,9 +145,6 @@ This dataset is not a substitute for professional diagnosis, treatment, or safet
 evaluation. Synthetic generation and omission of seed fields do not establish
 that every utterance is anonymous; automated pattern screening is only a limited
 check.
-
-No model weights, benchmark test answers, or private training infrastructure are
-included in this data release.
 
 <a id="citation"></a>
 
