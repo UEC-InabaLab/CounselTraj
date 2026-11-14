@@ -15,8 +15,7 @@ and response generation:
   dialogue-act (DA) trajectories, which guide dialogue expansion.
 - **[CounselTrajD](#counseltrajd):** a dataset of **10,964** synthetic Chinese
   counseling dialogues, averaging **87.45 utterances per dialogue** (individual
-  client or counselor messages), with dialogue-act annotations and planned
-  trajectories.
+  client or counselor messages).
 - **[CounselTrajLM](https://huggingface.co/UEC-InabaLab/CounselTrajLM):** a counseling
   dialogue model fine-tuned on CounselTrajD to generate the next counselor response
   from dialogue history.
