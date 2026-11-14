@@ -101,9 +101,10 @@ uses it to guide what each utterance does and how the interaction develops.
 </details>
 
 In the released JSONL files, `user` denotes the client and `assistant` denotes the
-counselor. Each `messages` entry has a `dialogue_act` tag alongside its text;
-`planned_dialogue_acts` stores the intended trajectory. The planned sequence and
-the sequence realized in the generated dialogue can differ; see the
+counselor. The `dialogue_act` field in each `messages` entry preserves the tag
+emitted during generation; `planned_dialogue_acts` stores the intended trajectory.
+These tags are not guaranteed to align one-to-one with the planned trajectory;
+see the
 [data schema](data/README.md#schema).
 
 <a id="models"></a>
@@ -123,8 +124,7 @@ card, and inference script.
 
 ## 🗂️ CounselTrajD
 
-CounselTrajD contains **10,964 synthetic Chinese counseling dialogues** with
-utterance-level dialogue-act annotations and planned dialogue-act trajectories.
+CounselTrajD contains **10,964 synthetic Chinese counseling dialogues**.
 The complete release contains **958,791 utterances** across 15 topic categories.
 These are generated expansions conditioned on source conversations, not newly
 collected human counseling sessions.

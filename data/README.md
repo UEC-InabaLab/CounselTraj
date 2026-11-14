@@ -26,7 +26,9 @@ utterances, with 42,197,155 text characters excluding speaker and tag markup.
 to `counselor`. Dialogues can begin with an assistant greeting. The export preserves
 all utterances, their order, and dialogue-act tags. It does not force alternation,
 truncate to the planned trajectory, or silently correct generated content.
-Planned and realized trajectories are separate fields and need not coincide.
+The message-level `dialogue_act` values are tags emitted during generation.
+They are stored separately from the planned trajectory and are not guaranteed
+to align with it one-to-one.
 See [dialogue acts and trajectories](../README.md#dialogue-acts) for the role-specific
 tag definitions and an illustrative trajectory segment.
 In this release, 114 dialogues have different planned and realized trajectory
