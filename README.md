@@ -2,6 +2,25 @@
 
 # CounselTraj: Synthesizing Process-Aware Psychological Counseling Dialogues via Dialogue-Act Trajectory Planning
 
+🎉 **Accepted to the EACL 2027 Main Conference.**
+
+📄 **Paper:** arXiv link coming soon.
+<!-- Replace the line above with the arXiv paper link when available. -->
+
+We introduce three resources for psychological counseling dialogue synthesis
+and response generation:
+
+- **[CounselTraj](https://huggingface.co/UEC-InabaLab/CounselTraj):** a trajectory
+  planning model that maps brief counseling dialogues to long, session-level
+  dialogue-act (DA) trajectories, which guide dialogue expansion.
+- **[CounselTrajD](#counseltrajd):** a dataset of **10,964** synthetic Chinese
+  counseling dialogues, averaging **87.45 utterances per dialogue** (individual
+  client or counselor messages), with dialogue-act annotations and planned
+  trajectories.
+- **[CounselTrajLM](https://huggingface.co/UEC-InabaLab/CounselTrajLM):** a counseling
+  dialogue model fine-tuned on CounselTrajD to generate the next counselor response
+  from dialogue history.
+
 <a id="data-construction"></a>
 
 ## 🧩 Data construction
