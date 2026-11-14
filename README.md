@@ -26,6 +26,69 @@ to expand brief Chinese synthetic counseling dialogues.
    trajectory to guide long-form generation. For CounselTrajD, GPT-5.5 produces
    the resulting collection of 10,964 Chinese counseling dialogues.
 
+<a id="dialogue-acts"></a>
+
+### 💬 Dialogue acts and trajectories
+
+A **dialogue act (DA)** describes the communicative function of an utterance,
+such as asking an open question, sharing an inner feeling, or acknowledging the
+other speaker. CounselTraj uses separate inventories for **clients (14 tags)**
+and **counselors (11 tags)**, as defined in Section 4.1 and Appendix B.1 of the
+paper.
+
+A **dialogue-act trajectory** is an ordered sequence of speaker–tag pairs across
+a session. For example, a short illustrative segment could be
+`counselor: OpenQuestion → client: SelfDisclosure → counselor: Reflection → client: SimpleAnswer`.
+The planner predicts this sequence from a brief dialogue, and the expansion model
+uses it to guide what each utterance does and how the interaction develops.
+
+<details>
+<summary>Client dialogue acts (14 tags)</summary>
+
+| Tag | Meaning |
+| --- | --- |
+| `DetailedDescription` | Describing facts, events, background, or context in detail. |
+| `UnderstandingCheck` | Checking the meaning of what the counselor has said. |
+| `SimpleAnswer` | Giving a short factual answer without elaboration. |
+| `Agreement` | Accepting or agreeing with the counselor's view, interpretation, or empathy. |
+| `Request` | Asking for advice, solutions, or concrete guidance. |
+| `SelfDisclosure` | Sharing inner feelings, vulnerability, core values, or self-critical thoughts. |
+| `PositiveEmotion` | Expressing relief, hope, or another positive emotional change. |
+| `Backchannel` | Giving a minimal response to show listening. |
+| `Question` | Asking a general question, apart from advice requests or understanding checks. |
+| `Hesitation` | Expressing uncertainty, hesitation, silence, or difficulty responding. |
+| `Resistance` | Rejecting or showing reluctance toward the counselor's advice, interpretation, or intervention. |
+| `Greeting` | Opening or closing the conversation. |
+| `Thanking` | Expressing simple thanks. |
+| `Other` | Other functions, such as checking the connection or indicating a temporary absence. |
+
+</details>
+
+<details>
+<summary>Counselor dialogue acts (11 tags)</summary>
+
+| Tag | Meaning |
+| --- | --- |
+| `OpenQuestion` | Asking a question that invites a free, broad response. |
+| `ClosedQuestion` | Asking a yes/no question or one with a restricted answer range. |
+| `Paraphrase` | Restating the client's facts or content to organize and confirm understanding. |
+| `Reflection` | Reflecting the client's underlying emotions or meanings to support exploration. |
+| `Affirm` | Affirming the client's strengths, motivation, or abilities. |
+| `Suggest` | Proposing an action, perspective, coping method, or possible solution. |
+| `Inform` | Providing information, explanations, resources, or answers. |
+| `Backchannel` | Giving a brief response to show listening. |
+| `Greeting` | Opening or closing the conversation. |
+| `Thanking` | Expressing gratitude. |
+| `Other` | Session management, apologies, or other functions outside these categories. |
+
+</details>
+
+In the released JSONL files, `user` denotes the client and `assistant` denotes the
+counselor. Each `messages` entry has a `dialogue_act` tag alongside its text;
+`planned_dialogue_acts` stores the intended trajectory. The planned sequence and
+the sequence realized in the generated dialogue can differ; see the
+[data schema](data/README.md#schema).
+
 <a id="models"></a>
 
 ## 🤗 Models

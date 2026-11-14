@@ -27,6 +27,8 @@ to `counselor`. Dialogues can begin with an assistant greeting. The export prese
 all utterances, their order, and dialogue-act tags. It does not force alternation,
 truncate to the planned trajectory, or silently correct generated content.
 Planned and realized trajectories are separate fields and need not coincide.
+See [dialogue acts and trajectories](../README.md#dialogue-acts) for the role-specific
+tag definitions and an illustrative trajectory segment.
 In this release, 114 dialogues have different planned and realized trajectory
 lengths. They are retained without truncation or silent repair.
 
