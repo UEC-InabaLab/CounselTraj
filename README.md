@@ -33,8 +33,7 @@ to expand brief Chinese synthetic counseling dialogues.
 A **dialogue act (DA)** describes the communicative function of an utterance,
 such as asking an open question, sharing an inner feeling, or acknowledging the
 other speaker. CounselTraj uses separate inventories for **clients (14 tags)**
-and **counselors (11 tags)**, as defined in Section 4.1 and Appendix B.1 of the
-paper.
+and **counselors (11 tags)**.
 
 A **dialogue-act trajectory** is an ordered sequence of speaker–tag pairs across
 a session. For example, a short illustrative segment could be
