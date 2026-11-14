@@ -34,6 +34,9 @@ to expand brief Chinese synthetic counseling dialogues.
 
 1. **Annotate dialogue acts.** Label the client and counselor utterances in
    selected KokoroChat sessions to obtain complete dialogue-act trajectories.
+   The [DA annotation prompts](annotation/README.md) include Japanese client and
+   counselor templates, plus Chinese and English client templates for cross-dataset
+   analysis.
 2. **Construct brief dialogues.** Rewrite the Japanese sessions into brief Chinese
    dialogues, pairing each brief dialogue with its original annotated trajectory.
 3. **Train the trajectory planner.** Fine-tune Qwen3-8B on these pairs to predict

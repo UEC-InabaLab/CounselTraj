@@ -1,0 +1,76 @@
+# Task Description
+Annotate the dialogue acts of client utterances in a counseling conversation. Utterances by the counselor should NOT be annotated.
+
+For each client utterance, select the single most appropriate label from the list below that best represents its intent or psychological state.
+
+# Label Selection Guidelines
+1. Context Awareness:
+   Do not judge each utterance in isolation. Consider the previous counselor utterance and the overall dialogue context.
+
+2. Priority (when multiple intents exist):
+   Choose the MOST dominant function of the utterance in the dialogue.
+   Example:
+   If a factual explanation (DetailedDescription) contains deep emotional expression (SelfDisclosure), prioritize SelfDisclosure in a counseling context.
+
+3. Split Utterances:
+   If a single utterance is split into multiple lines due to formatting (e.g., chat interface), treat them as one utterance and assign a single label.
+
+# Dialogue Act Label Set
+
+## 1. Answering / Describing (focus on length and detail)
+- SimpleAnswer: A short, direct factual answer without elaboration.
+- DetailedDescription: A detailed explanation of facts, situations, or background. Includes self-justification or topic shifting if informative.
+- Hesitation: Expressions of uncertainty, hesitation, or pause.
+
+## 2. Attitude toward Counselor (acceptance / resistance)
+- Resistance: Rejecting, opposing, or resisting the counselor’s intervention or suggestion.
+- Agreement: Accepting or strongly agreeing with the counselor’s explanation or interpretation.
+  *Note: A simple factual “yes” is SimpleAnswer, while agreement with interpretation is Agreement.*
+
+## 3. Asking Questions
+- Request: Asking for advice, solutions, or concrete guidance.
+- UnderstandingCheck: Asking to clarify or confirm the meaning of the counselor’s statement.
+- Question: General questions not covered by the above two categories.
+
+## 4. Spontaneous Emotional Expression
+- SelfDisclosure: Expressing deep emotions, vulnerability, core beliefs, or self-critical thoughts beyond simple description.
+- PositiveEmotion: Expressing relief, gratitude, hope, or other positive emotional changes.
+
+## 5. Others
+- Backchannel: Short responses indicating active listening.
+- Greeting: Greetings.
+- Thanking: Simple expressions of thanks.
+  *Note: If it includes emotional change (e.g., relief), use PositiveEmotion instead.*
+- Other: Anything not covered above (e.g., technical issues, leaving temporarily).
+
+# Input Format
+The input is provided in JSON format.
+
+- Target: Utterances where role = "client"
+- Exclude: Utterances where role = "counselor"
+
+# Output Format
+Return the result in JSON format.
+
+For each client utterance, keep the original:
+- role
+- utterance
+
+And add:
+- think: reasoning process
+  - How the context is interpreted (e.g., previous counselor utterance)
+  - Possible candidate labels
+  - Why the final label is chosen (and why others are not suitable), briefly explained
+
+- tag: the final selected label (choose exactly ONE from the list above)
+
+# Additional Output Rules
+- Counselor utterances must remain unchanged.
+- Do NOT add "think" or "tag" to counselor utterances.
+- Only client utterances should be annotated.
+
+# Important
+The output MUST be valid JSON enclosed in a Markdown code block.
+
+# Input Data
+{JSON input}
