@@ -16,7 +16,7 @@ and response generation:
 - **[CounselTrajD](#counseltrajd):** a dataset of **10,964** synthetic Chinese
   counseling dialogues, averaging **87.45 utterances per dialogue** (individual
   client or counselor messages).
-- **[CounselTrajLM](https://huggingface.co/UEC-InabaLab/CounselTrajLM):** a counseling
+- **[CounselTrajLM](#counseltrajlm):** a counseling
   dialogue model fine-tuned on CounselTrajD to generate the next counselor response
   from dialogue history.
 
@@ -114,11 +114,22 @@ see the
 | Model | Purpose | Base model | Format |
 | --- | --- | --- | --- |
 | [CounselTraj](https://huggingface.co/UEC-InabaLab/CounselTraj) | Dialogue-act trajectory planning for dialogue synthesis | Qwen3-8B | LoRA adapter |
-| [CounselTrajLM](https://huggingface.co/UEC-InabaLab/CounselTrajLM) | Next counselor response generation from dialogue history | Qwen3.5-9B | LoRA adapter |
 
 🔒 Both model repositories are currently private and require access through an
 authorized Hugging Face account. Each repository includes its tokenizer, model
 card, and inference script.
+
+<a id="counseltrajlm"></a>
+
+### CounselTrajLM
+
+CounselTrajLM models are fine-tuned on [CounselTrajD](#counseltrajd) to generate
+the next counselor response from dialogue history. Available versions are listed
+below.
+
+| Base model | Format | Download |
+| --- | --- | --- |
+| Qwen3.5-9B | LoRA adapter | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
 
 <a id="counseltrajd"></a>
 
