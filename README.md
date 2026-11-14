@@ -115,7 +115,7 @@ see the
 | --- | --- | --- | --- |
 | [CounselTraj](https://huggingface.co/UEC-InabaLab/CounselTraj) | Dialogue-act trajectory planning for dialogue synthesis | Qwen3-8B | LoRA adapter |
 
-🔒 Both model repositories are currently private and require access through an
+🔒 The listed model repositories are currently private and require access through an
 authorized Hugging Face account. Each repository includes its tokenizer, model
 card, and inference script.
 
