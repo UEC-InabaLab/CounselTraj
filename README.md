@@ -2,6 +2,8 @@
 
 # CounselTraj: Synthesizing Process-Aware Psychological Counseling Dialogues via Dialogue-Act Trajectory Planning
 
+**English** | [简体中文](README_zh-CN.md)
+
 🎉 **Accepted to the EACL 2027 Main Conference.**
 
 📄 **Paper:** arXiv link coming soon.
