@@ -33,7 +33,7 @@ CounselTraj 从 [KokoroChat](https://github.com/UEC-InabaLab/KokoroChat) 中学�
 
 ### 💬 对话行为与轨迹
 
-**对话行为（DA）**描述一次发言在交流中的功能，例如提出开放式问题、表达内心感受或表示正在倾听。CounselTraj 分别为**来访者（14 类标签）**和**咨询师（11 类标签）**定义了标签集合。
+**对话行为（DA）** 描述一次发言在交流中的功能，例如提出开放式问题、表达内心感受或表示正在倾听。CounselTraj 分别为 **来访者（14 类标签）** 和 **咨询师（11 类标签）** 定义了标签集合。
 
 **DA 轨迹**是贯穿整段会话、按顺序排列的“说话者—标签”序列。例如，一个简短的示意片段可以是：
 `counselor: OpenQuestion → client: SelfDisclosure → counselor: Reflection → client: SimpleAnswer`。
