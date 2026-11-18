@@ -134,7 +134,7 @@ below.
 
 | Base model | Format | Download |
 | --- | --- | --- |
-| Qwen3.5-9B | LoRA adapter | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
+| Qwen3.5-9B | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
 | Qwen2.5-7B-Instruct | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen2.5-7B) |
 
 <a id="counseltrajd"></a>
