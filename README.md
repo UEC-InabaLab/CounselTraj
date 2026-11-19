@@ -6,8 +6,7 @@
 
 🎉 **Accepted to the EACL 2027 Main Conference.**
 
-📄 **Paper:** arXiv link coming soon.
-<!-- Replace the line above with the arXiv paper link when available. -->
+📄 **Paper:** [arXiv:2611.24168](https://arxiv.org/abs/2611.24168)
 
 We introduce three resources for psychological counseling dialogue synthesis
 and response generation:
@@ -134,9 +133,9 @@ below.
 
 | Base model | Format | Download |
 | --- | --- | --- |
-| Qwen3.5-9B | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
 | Qwen2.5-7B-Instruct | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen2.5-7B) |
 | Qwen3-8B | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen3-8B) |
+| Qwen3.5-9B | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
 
 <a id="counseltrajd"></a>
 
@@ -256,5 +255,6 @@ If you use CounselTraj in your research, please cite:
     author = "Qi, Zhiyang and Inaba, Michimasa",
     booktitle = "Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics",
     year = "2027",
+    url = "https://arxiv.org/abs/2611.24168",
 }
 ```

@@ -1,5 +1,7 @@
 # Response-level and dialogue-level evaluation prompts
 
+📄 **Paper:** [CounselTraj (arXiv:2611.24168)](https://arxiv.org/abs/2611.24168)
+
 These Chinese templates cover the response-level and dialogue-level evaluations
 of counseling models in the CounselTraj paper. Appendix D.2
 (Figure 12) and Appendix D.4 (Figure 14) present their English descriptions.

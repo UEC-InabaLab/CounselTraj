@@ -6,8 +6,7 @@
 
 🎉 **论文已被 EACL 2027 主会接收。**
 
-📄 **论文：** arXiv 链接即将公布。
-<!-- 论文上线后，将上一行替换为 arXiv 链接。 -->
+📄 **论文：** [arXiv:2611.24168](https://arxiv.org/abs/2611.24168)
 
 我们为心理咨询对话合成与回复生成构建了三项资源：
 
@@ -100,9 +99,9 @@ CounselTrajLM 系列模型使用 [CounselTrajD](#counseltrajd) 微调，根据�
 
 | 基座模型 | 格式 | 下载 |
 | --- | --- | --- |
-| Qwen3.5-9B | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
 | Qwen2.5-7B-Instruct | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen2.5-7B) |
 | Qwen3-8B | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen3-8B) |
+| Qwen3.5-9B | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
 
 <a id="counseltrajd"></a>
 
@@ -204,5 +203,6 @@ for dialogue in load_dialogues("data"):
     author = "Qi, Zhiyang and Inaba, Michimasa",
     booktitle = "Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics",
     year = "2027",
+    url = "https://arxiv.org/abs/2611.24168",
 }
 ```

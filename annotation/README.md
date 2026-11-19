@@ -1,5 +1,7 @@
 # Dialogue-act annotation prompts
 
+📄 **Paper:** [CounselTraj (arXiv:2611.24168)](https://arxiv.org/abs/2611.24168)
+
 These prompts assign dialogue-act tags to existing counseling utterances for
 trajectory construction and cross-dataset dialogue-act analysis. The files retain
 the original prompt text and language.
