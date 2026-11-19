@@ -89,7 +89,7 @@ CounselTraj 从 [KokoroChat](https://github.com/UEC-InabaLab/KokoroChat) 中学�
 | --- | --- | --- | --- |
 | [CounselTraj](https://huggingface.co/UEC-InabaLab/CounselTraj) | 为对话合成规划 DA 轨迹 | Qwen3-8B | LoRA 适配器 |
 
-🔒 所列模型仓库目前为私有仓库，需要使用已获授权的 Hugging Face 账户访问。各仓库包含分词器、模型卡和推理脚本。
+🌐 所列模型仓库均已在 Hugging Face 公开，可直接访问和下载。各仓库包含分词器、模型卡和推理脚本。
 
 <a id="counseltrajlm"></a>
 
