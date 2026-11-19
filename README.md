@@ -136,6 +136,7 @@ below.
 | --- | --- | --- |
 | Qwen3.5-9B | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
 | Qwen2.5-7B-Instruct | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen2.5-7B) |
+| Qwen3-8B | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen3-8B) |
 
 <a id="counseltrajd"></a>
 

@@ -102,6 +102,7 @@ CounselTrajLM 系列模型使用 [CounselTrajD](#counseltrajd) 微调，根据�
 | --- | --- | --- |
 | Qwen3.5-9B | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
 | Qwen2.5-7B-Instruct | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen2.5-7B) |
+| Qwen3-8B | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen3-8B) |
 
 <a id="counseltrajd"></a>
 
