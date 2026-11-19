@@ -2,6 +2,8 @@
 
 📄 **Paper:** [CounselTraj (arXiv:2611.24168)](https://arxiv.org/abs/2611.24168)
 
+📦 **Download:** [Hugging Face dataset](https://huggingface.co/datasets/UEC-InabaLab/CounselTrajD)
+
 ## Contents
 
 The three `*_derived.jsonl.gz` files contain all 10,964 dialogues. Each gzip stream
