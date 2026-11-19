@@ -2,7 +2,7 @@
 
 📄 **Paper:** [CounselTraj (arXiv:2611.24168)](https://arxiv.org/abs/2611.24168)
 
-📦 **Download:** [Hugging Face dataset](https://huggingface.co/datasets/UEC-InabaLab/CounselTrajD)
+🤗 **Download:** [Hugging Face](https://huggingface.co/datasets/UEC-InabaLab/CounselTrajD) · [GitHub data files](https://github.com/UEC-InabaLab/CounselTraj/tree/master/data)
 
 ## Contents
 

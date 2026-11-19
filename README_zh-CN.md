@@ -107,7 +107,7 @@ CounselTrajLM 系列模型使用 [CounselTrajD](#counseltrajd) 微调，根据�
 
 ## 🗂️ CounselTrajD
 
-📦 **下载：** [Hugging Face 数据集](https://huggingface.co/datasets/UEC-InabaLab/CounselTrajD)
+🤗 **下载：** [Hugging Face](https://huggingface.co/datasets/UEC-InabaLab/CounselTrajD) · [GitHub 数据文件](https://github.com/UEC-InabaLab/CounselTraj/tree/master/data)
 
 CounselTrajD 包含 **10,964 段合成中文心理咨询对话**，共 **958,791 次发言**，涵盖 15 个主题类别。这些对话是基于种子对话生成的扩充结果，并非新收集的真人心理咨询会话。
 

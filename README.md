@@ -140,7 +140,7 @@ below.
 
 ## 🗂️ CounselTrajD
 
-📦 **Download:** [Hugging Face dataset](https://huggingface.co/datasets/UEC-InabaLab/CounselTrajD)
+🤗 **Download:** [Hugging Face](https://huggingface.co/datasets/UEC-InabaLab/CounselTrajD) · [GitHub data files](https://github.com/UEC-InabaLab/CounselTraj/tree/master/data)
 
 CounselTrajD contains **10,964 synthetic Chinese counseling dialogues**.
 The complete release contains **958,791 utterances** across 15 topic categories.
