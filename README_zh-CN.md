@@ -101,8 +101,8 @@ CounselTrajLM 系列模型使用 [CounselTrajD](#counseltrajd) 微调，根据�
 | --- | --- | --- |
 | Qwen2.5-7B-Instruct | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen2.5-7B) |
 | Qwen3-8B | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen3-8B) |
-| Llama-3.1-8B-Instruct | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/Llama-3.1-8B-CounselTrajLM) |
 | Qwen3.5-9B | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
+| Llama-3.1-8B-Instruct | 已合并的 BF16 完整模型 | [Hugging Face](https://huggingface.co/UEC-InabaLab/Llama-3.1-8B-CounselTrajLM) |
 
 Llama 版本为 **Built with Llama**，适用
 [Llama 3.1 社区许可](https://huggingface.co/UEC-InabaLab/Llama-3.1-8B-CounselTrajLM/blob/main/LICENSE)。
