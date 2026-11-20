@@ -137,9 +137,6 @@ below.
 | Qwen3.5-9B | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/CounselTrajLM) |
 | Llama-3.1-8B-Instruct | Merged BF16 model | [Hugging Face](https://huggingface.co/UEC-InabaLab/Llama-3.1-8B-CounselTrajLM) |
 
-The Llama-based version is **Built with Llama** and is distributed under the
-[Llama 3.1 Community License](https://huggingface.co/UEC-InabaLab/Llama-3.1-8B-CounselTrajLM/blob/main/LICENSE).
-
 <a id="counseltrajd"></a>
 
 ## 🗂️ CounselTrajD
